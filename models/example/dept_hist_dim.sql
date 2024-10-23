@@ -1,6 +1,10 @@
 
 
-{{ config(materialized='table') }}
+{{ config(
+    materialized='incremental' 
+ ,incremental_strategy = 'append'
+)
+}}
 
 with source_data as (
 
