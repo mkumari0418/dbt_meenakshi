@@ -9,6 +9,6 @@ SELECT    Replace( JSON_EXTRACT(parsed_records.after, '$.op_type'),'"','') as op
 cast(Replace( JSON_EXTRACT(parsed_records.after, '$.MEMBERSHIPNUMBER'),'"','') as INT64) as MEMBERSHIPNUMBER,
 cast(Replace( JSON_EXTRACT(parsed_records.after, '$.CHGSTAMP'),'"','') as Datetime) as CHGSTAMP,
 cast(Replace( JSON_EXTRACT(parsed_records.after, '$.REDEMPTIONAMOUNT'),'"','') as FLOAT64) as REDEMPTIONAMOUNT,
-cast( JSON_EXTRACT(parsed_records.after, '$.DBACTION') as STRING) as DBACTION,
+ JSON_VALUE(parsed_records.after, '$.DBACTION') as DBACTION,
 current_datetime () as updated_ts
 FROM `studio-de-accelerator.dbt_mkumari.raw_cdc_test_json` 
