@@ -1,8 +1,5 @@
 {{ config(
-    materialized='incremental' 
-    , incremental_strategy = "insert_overwrite"
-  ,partition_by={"field": "updated_ts", "data_type": "Datetime"} 
-
+    materialized='view' 
  )
 }}
 
