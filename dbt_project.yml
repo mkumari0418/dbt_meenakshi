@@ -42,4 +42,4 @@ models:
       +materialized: table
 seeds:
   +database: "{{ env_var('DBT_PROJECT') }}"
-  +schema: "{{ env_var('DBT_GOLD_DATASET) }}"
+  +schema: "{{ env_var('DBT_GOLD_DATASET') }}"
