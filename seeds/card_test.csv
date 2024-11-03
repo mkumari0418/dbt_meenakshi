@@ -1,0 +1,7 @@
+card_status_key,card_status_cd,card_status_desc,create_audit_id,create_db_ts,update_audit_id,update_db_ts
+1,Active,Card verified and ready to be used for shopping products and services,-100,2024-07-31T09:01:18.875,-100,2024-07-31T09:01:18.875
+2,Cancelled,Card which has been cancelled,-100,2024-07-31T09:01:18.875,-100,2024-07-31T09:01:18.875
+3,Compromised,"Card which has been compromised (e.g. lost, stolen or locked)",-100,2024-07-31T09:01:18.875,-100,2024-07-31T09:01:18.875
+4,Issued,Card issued but cannot be used yet,-100,2024-07-31T09:01:18.875,-100,2024-07-31T09:01:18.875
+6,Stolen,Card which has been stolen,-100,2024-07-31T09:01:18.875,-100,2024-07-31T09:01:18.875
+7,Inactive,Inactive Card,-100,2024-07-31T09:01:18.875,-100,2024-07-31T09:01:18.875

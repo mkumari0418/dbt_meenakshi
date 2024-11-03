@@ -40,6 +40,3 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
-seeds:
-  +database: "{{ env_var('DBT_PROJECT') }}"
-  +schema: "{{ env_var('DBT_GOLD_DATASET') }}"
